@@ -1,0 +1,18 @@
+class Rectangulo{
+  double largo;
+  double ancho;
+  
+  Rectangulo({required this.largo,required this.ancho})
+    double get area{
+      return largo*ancho; 
+    }
+  
+}
+void main(){
+  Rectangulo rectangulo = Rectangulo(largo: 6.0, ancho: 3.0);
+  
+  print('{largo: $rectangulo.largo}');
+  print('{ancho: $rectangulo.ancho}');
+  print('{Area: $rectangulo.area}');
+}
+
